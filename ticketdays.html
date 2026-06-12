@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Satbir's World - Ticket Days</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>SATBIR'S</strong> <span>WORLD</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html#one" class="button scrolly">Projects</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+						</ul>
+						<ul class="actions stacked">
+						    <a href="#contact" class="button primary fit scrolly">Contact Me</a>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pictick.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Ticket Days</h1>
+							</header>
+							<div class="content">
+								<p>The Ticket Days Power BI dashboard was developed to track the number of days the Customer Service department takes to resolve customer site-related issues. The dashboard provides visibility into the complete resolution process by capturing the time spent reviewing service notes, coordinating with technicians, and working with technical support teams to resolve issues remotely. This enables management to better understand the effort involved in resolving customer concerns and identify opportunities for improving response and resolution times.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Data</h2>
+									</header>
+									<p> The data for this dashboard is sourced from the Service table within the billing database. A SQL connector is used to connect the database to Power BI through an on-site data gateway, ensuring secure and reliable access to the required information. This setup allows the dashboard to display current and accurate service ticket data for reporting and analysis purposes.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a href="images/t1.jpg" class="image" target="_blank">
+										<img src="images/t1.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Dashboard</h3>
+											</header>
+											<p>The dashboard is designed to provide detailed performance statistics for the Customer Service department. It displays information for each customer service agent, including the accounts they have worked on and the number of days required to resolve each issue. The dashboard also tracks the number of technician dispatches to customer sites and provides visibility into all related activities, including both on-site and remote support efforts. This information helps management evaluate efficiency, resource utilization, and overall service performance.</p>
+											<ul class="actions">
+												
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="images/t2.jpg" class="image" target="_blank">
+										<img src="images/t2.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Notes</h3>
+											</header>
+											<p>The Notes section displays all comments entered by technicians while working on service tickets through the service ticket application. These notes provide valuable insight into the work completed on-site and help customer service representatives understand the history of each issue. The section also tracks technician arrival and departure times, allowing comparisons between estimated and actual service durations. This information supports better planning, scheduling, and resource allocation for future service activities.</p>
+											<ul class="actions">
+												
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="images/t3.jpg" class="image" target="_blank">
+										<img src="images/t3.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Refresh Button</h3>
+											</header>
+											<p>The dashboard includes a refresh button that allows users to update the report on demand. When the button is selected, a Power Automate workflow runs in the background and triggers a dataset refresh, ensuring that users have access to the most current information available without waiting for the scheduled refresh cycle.</p>
+											<ul class="actions">
+												
+											</ul>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Project History</h2>
+									</header>
+									<p>This project was initiated in response to a management request for improved visibility into service ticket performance and resolution activities. The goal was to consolidate all backend service actions into a single dashboard, allowing the organization to measure the time, effort, and resources required to resolve customer issues. By analyzing service trends, resolution timelines, and technician activities, the dashboard helps identify areas for improvement and supports initiatives aimed at reducing resolution times and increasing operational efficiency.</p>
+									<ul class="actions">
+										<li><a href="index.html#one" class="button scrolly">Other Projects</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+                                <form id="contact-form">
+                                    <div class="fields">
+                                        <div class="field half">
+                                            <label for="name">Name</label>
+                                            <input type="text" name="name" id="name" required />
+                                        </div>
+
+                                        <div class="field half">
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" id="email" required />
+                                        </div>
+
+                                        <div class="field">
+                                            <label for="message">Message</label>
+                                            <textarea name="message" id="message" rows="6" required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <ul class="actions">
+                                        <li>
+                                            <input type="submit" value="Send Message" class="primary" />
+                                        </li>
+                                        <li>
+                                            <input type="reset" value="Clear" />
+                                        </li>
+                                    </ul>
+
+                                    <p id="form-status"></p>
+                                </form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">satbir0703@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(604) 441-8396</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>Surrey<br />
+										British Columbia<br />
+										Canada</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li>
+									<a href="https://github.com/ssingh2707" class="icon brands alt fa-github">
+										<span class="label">GitHub</span>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/satbir-singh-1b5677140" class="icon brands alt fa-linkedin-in">
+										<span class="label">LinkedIn</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Satbir's World</li>
+								<li>Design: <a href="https://www.linkedin.com/in/satbir-singh-1b5677140">Satbir Singh</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script>
+            const form = document.getElementById("contact-form");
+            const status = document.getElementById("form-status");
+
+            form.addEventListener("submit", async function (e) {
+                e.preventDefault();
+
+                const data = new FormData(form);
+
+                try {
+                    const response = await fetch(
+                        "https://formspree.io/f/mbdeobdn",
+                        {
+                            method: "POST",
+                            body: data,
+                            headers: {
+                                Accept: "application/json"
+                            }
+                        }
+                    );
+
+                    if (response.ok) {
+                        status.innerHTML = "✓ Message sent successfully!";
+                        form.reset();
+                    } else {
+                        status.innerHTML = "✗ Something went wrong. Please try again.";
+                    }
+                } catch (error) {
+                    status.innerHTML = "✗ Network error. Please try again later.";
+                }
+            });
+            </script>
+	</body>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function() {
+    setTimeout(() => {
+        this.reset();
+    }, 1000);
+});
+</script>
+</html>

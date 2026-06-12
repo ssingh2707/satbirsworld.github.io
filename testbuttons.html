@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Satbir's World - Receiver Test Buttons</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>SATBIR'S</strong> <span>WORLD</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html#one" class="button scrolly">Projects</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+						</ul>
+						<ul class="actions stacked">
+						    <a href="#contact" class="button primary fit scrolly">Contact Me</a>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic04.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Receiver Test Buttons</h1>
+							</header>
+							<div class="content">
+								<p>The Receiver Test Buttons Application is a Python-based tool developed to simplify the testing and verification of Manitou alarm receivers. The application uses API calls to Ajax dry-contact relays, allowing operators to generate test signals remotely and confirm that receivers are functioning correctly without needing to manually interact with security panels or customer accounts.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Setup</h2>
+									</header>
+									<p> The solution is built around Ajax wireless relays connected to an Ajax Hub. Each relay is hardwired to a dedicated security panel that is configured to communicate with a specific Manitou receiver. When the application sends an API request to the Ajax Hub, the selected relay generates a pulse, which triggers the connected panel to transmit an alarm signal to the designated receiver.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a href="images/SETUP.png" class="image" target="_blank">
+										<img src="images/SETUP.png" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>How It Works</h3>
+											</header>
+											<p>The system consists of nine Ajax wireless relays registered to a single Ajax Hub. Each relay is connected to a security panel, and each panel is programmed with the IP address and port information for a specific Manitou receiver. When an operator presses a button within the application, an API call is sent to the corresponding relay. The relay activates and triggers the panel, which then sends a test signal to the assigned receiver. Once the signal is received in Manitou, the operator can immediately verify that the receiver is operational and communicating correctly.</p>
+											<ul class="actions">
+												
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="images/tt2.jpg" class="image" target="_blank">
+										<img src="images/tt2.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>User Interface</h3>
+											</header>
+											<p>The application features a simple and user-friendly interface built with PyQt. Each receiver is represented by a dedicated button, allowing operators to initiate a test with a single click. The design was intentionally kept straightforward to minimize training requirements and ensure that testing can be performed quickly and efficiently. Operators simply select the desired receiver, and the application handles the signal generation process automatically.</p>
+											<ul class="actions">
+												
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="images/tt3.jpg" class="image" target="_blank">
+										<img src="images/tt3.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Manitou Integration</h3>
+											</header>
+											<p>To support testing, a dedicated account was created within Manitou specifically for receiver verification. Custom alarm definitions were configured with clear descriptions such as "Test Start" and "Test End." These events provide immediate confirmation that the signal was successfully received and processed by the receiver, making it easy for operators to verify functionality during testing.</p>
+											<ul class="actions">
+												
+											</ul>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Project History</h2>
+									</header>
+									<p>This project was developed for our monitoring station environment, which uses CSM Manitou as its primary alarm monitoring platform. Our infrastructure includes two on-premises Manitou servers as well as a cloud-hosted environment. As part of our operational procedures, monthly failover testing is performed between these systems to ensure continuity and reliability.
+
+Prior to this project, testing receivers required operators to locate accounts associated with specific receivers and manually generate test signals from those accounts. We also relied on legacy hardware test stations connected to in-house panels, many of which were over ten years old and becoming increasingly difficult to maintain.
+
+To modernize the testing process, the legacy hardware was replaced with Ajax wireless relays connected to various panel types used throughout the organization. The Receiver Test Buttons Application was then developed to provide a centralized and automated testing solution. As a result, operators can now perform receiver verification directly from their workstations without leaving their desks. In addition to supporting monthly failover procedures, the application is also used for daily receiver health checks to ensure that all receivers remain operational and ready to process alarm signals.</p>
+									<ul class="actions">
+										<li><a href="index.html#one" class="button scrolly">Other Projects</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+                                <form id="contact-form">
+                                    <div class="fields">
+                                        <div class="field half">
+                                            <label for="name">Name</label>
+                                            <input type="text" name="name" id="name" required />
+                                        </div>
+
+                                        <div class="field half">
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" id="email" required />
+                                        </div>
+
+                                        <div class="field">
+                                            <label for="message">Message</label>
+                                            <textarea name="message" id="message" rows="6" required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <ul class="actions">
+                                        <li>
+                                            <input type="submit" value="Send Message" class="primary" />
+                                        </li>
+                                        <li>
+                                            <input type="reset" value="Clear" />
+                                        </li>
+                                    </ul>
+
+                                    <p id="form-status"></p>
+                                </form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">satbir0703@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(604) 441-8396</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>Surrey<br />
+										British Columbia<br />
+										Canada</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li>
+									<a href="https://github.com/ssingh2707" class="icon brands alt fa-github">
+										<span class="label">GitHub</span>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/satbir-singh-1b5677140" class="icon brands alt fa-linkedin-in">
+										<span class="label">LinkedIn</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Satbir's World</li>
+								<li>Design: <a href="https://www.linkedin.com/in/satbir-singh-1b5677140">Satbir Singh</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script>
+            const form = document.getElementById("contact-form");
+            const status = document.getElementById("form-status");
+
+            form.addEventListener("submit", async function (e) {
+                e.preventDefault();
+
+                const data = new FormData(form);
+
+                try {
+                    const response = await fetch(
+                        "https://formspree.io/f/mbdeobdn",
+                        {
+                            method: "POST",
+                            body: data,
+                            headers: {
+                                Accept: "application/json"
+                            }
+                        }
+                    );
+
+                    if (response.ok) {
+                        status.innerHTML = "✓ Message sent successfully!";
+                        form.reset();
+                    } else {
+                        status.innerHTML = "✗ Something went wrong. Please try again.";
+                    }
+                } catch (error) {
+                    status.innerHTML = "✗ Network error. Please try again later.";
+                }
+            });
+            </script>
+	</body>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function() {
+    setTimeout(() => {
+        this.reset();
+    }, 1000);
+});
+</script>
+</html>

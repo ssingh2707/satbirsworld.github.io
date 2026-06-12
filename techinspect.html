@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Satbir's World - Tech Inspect</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>SATBIR'S</strong> <span>WORLD</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html#one" class="button scrolly">Projects</a></li>
+							<li><a href="aboutme.html">About Me</a></li>
+						</ul>
+						<ul class="actions stacked">
+						    <a href="#contact" class="button primary fit scrolly">Contact Me</a>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic05.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Tech Inspect</h1>
+							</header>
+							<div class="content">
+								<p>Tech Inspect is a Microsoft Power Platform-based mobile application developed for field technicians to perform site inspections before installation projects begin. The application allows technicians to collect site information, capture photos, and submit detailed inspection reports to the Customer Service and Sales teams. This process helps ensure that projects are quoted accurately and that installation teams have the necessary information before arriving on site.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Data Management</h2>
+									</header>
+									<p> Tech Inspect uses a dedicated SharePoint List as its primary database. Each inspection record stores comprehensive site information, including project details, inspection findings, and attachments such as site photographs. By centralizing all inspection data in SharePoint, the organization can easily access and manage historical records when needed.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a href="images/ti1.jpg" class="image" target="_blank">
+										<img src="images/ti1.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>User Interface</h3>
+											</header>
+											<p>The application's user interface was designed with simplicity and ease of use in mind, particularly for new employees and technicians who may have limited experience with mobile applications. The home screen presents users with two primary options: creating a new inspection or reviewing previous inspections. This straightforward design minimizes training requirements and enables technicians to quickly access the functionality they need.</p>
+											<ul class="actions">
+												
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="images/ti2.jpg" class="image" target="_blank">
+										<img src="images/ti2.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Features</h3>
+											</header>
+											<p>Tech Inspect supports both dark mode and light mode, allowing users to work in their preferred display setting. The application also provides access to previously completed inspections, enabling technicians to review historical site information, notes, and photographs before performing an installation. This feature helps technicians understand site conditions in advance and arrive better prepared with the appropriate tools and equipment.</p>
+											<ul class="actions">
+												
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="images/ti3.jpg" class="image" target="_blank">
+										<img src="images/ti3.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>SharePoint Integration</h3>
+											</header>
+											<p>Once an inspection is completed, an automated Power Automate workflow runs in the background. The workflow creates a folder within the SharePoint site using the job number and site name, then stores all site photographs and related files in that location. A document version of the inspection report is generated and emailed to the Customer Service team along with the site photos and a link to the SharePoint folder. This automation ensures that all relevant stakeholders have immediate access to the inspection information and supporting documentation.</p>
+											<ul class="actions">
+												
+											</ul>
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Project History</h2>
+									</header>
+									<p>I developed Tech Inspect to reduce errors caused by incomplete or inaccurate communication between Sales, Customer Service, and Field Technicians. Before the application was introduced, important site information was sometimes missed or incorrectly communicated, resulting in inaccurate project quotations and technicians arriving on-site without the proper equipment. Since the deployment of Tech Inspect, the quality and consistency of site information have improved significantly. As a result, quoting accuracy has increased, communication between departments has become more effective, and installation teams are better prepared before arriving at project sites.</p>
+									<ul class="actions">
+										<li><a href="index.html#one" class="button scrolly">Other Projects</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+                                <form id="contact-form">
+                                    <div class="fields">
+                                        <div class="field half">
+                                            <label for="name">Name</label>
+                                            <input type="text" name="name" id="name" required />
+                                        </div>
+
+                                        <div class="field half">
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" id="email" required />
+                                        </div>
+
+                                        <div class="field">
+                                            <label for="message">Message</label>
+                                            <textarea name="message" id="message" rows="6" required></textarea>
+                                        </div>
+                                    </div>
+
+                                    <ul class="actions">
+                                        <li>
+                                            <input type="submit" value="Send Message" class="primary" />
+                                        </li>
+                                        <li>
+                                            <input type="reset" value="Clear" />
+                                        </li>
+                                    </ul>
+
+                                    <p id="form-status"></p>
+                                </form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">satbir0703@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(604) 441-8396</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>Surrey<br />
+										British Columbia<br />
+										Canada</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li>
+									<a href="https://github.com/ssingh2707" class="icon brands alt fa-github">
+										<span class="label">GitHub</span>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/satbir-singh-1b5677140" class="icon brands alt fa-linkedin-in">
+										<span class="label">LinkedIn</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Satbir's World</li>
+								<li>Design: <a href="https://www.linkedin.com/in/satbir-singh-1b5677140">Satbir Singh</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+            <script>
+            const form = document.getElementById("contact-form");
+            const status = document.getElementById("form-status");
+
+            form.addEventListener("submit", async function (e) {
+                e.preventDefault();
+
+                const data = new FormData(form);
+
+                try {
+                    const response = await fetch(
+                        "https://formspree.io/f/mbdeobdn",
+                        {
+                            method: "POST",
+                            body: data,
+                            headers: {
+                                Accept: "application/json"
+                            }
+                        }
+                    );
+
+                    if (response.ok) {
+                        status.innerHTML = "✓ Message sent successfully!";
+                        form.reset();
+                    } else {
+                        status.innerHTML = "✗ Something went wrong. Please try again.";
+                    }
+                } catch (error) {
+                    status.innerHTML = "✗ Network error. Please try again later.";
+                }
+            });
+            </script>
+	</body>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function() {
+    setTimeout(() => {
+        this.reset();
+    }, 1000);
+});
+</script>
+</html>
